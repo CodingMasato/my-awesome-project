@@ -2,13 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
   </head>
+
   <body>
-    <h1>YERRRR</h1>
-    <script src="script.jss"></script>
+    <div class="container">
+      <div class="weather-app">
+        <form class="serach-form" id="search-city">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city"
+                id="city-input"
+                class="city-form"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="submit-form" />
+            </div>
+          </div>
+        </form>
+        <h1 id="weather-locatioin"></h1>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
